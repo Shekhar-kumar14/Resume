@@ -180,19 +180,3 @@ window.addEventListener("scroll",()=>{
         name.style.fontSize = "30px";
     }
 });
-const workPara = document.querySelector(".work-text");
-const readMoreBtn = document.querySelector(".read-more-btn");
-
-readMoreBtn.addEventListener("click", () => {
-    workPara.classList.toggle("expanded");
-    workPara.classList.toggle("collapsed");
-
-    if(workPara.classList.contains("expanded")){
-        readMoreBtn.textContent = "Read Less";
-        ScrollTrigger.refresh();
-    }else{
-        readMoreBtn.textContent = "Read More";
-        workPara.scrollIntoView({ behavior: "smooth" });
-        ScrollTrigger.refresh();
-    }
-});
