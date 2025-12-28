@@ -26,7 +26,7 @@ gsap.from(".skill-img", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: "#skills",
-        start: "top 80%",
+        start: "top 75%",
     }
 });
 
