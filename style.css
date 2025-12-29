@@ -143,6 +143,10 @@
             position: absolute;
             left: -60px;
         }
+.menu-names{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
         .about-me p{
             color: white;
             font-size: 20px;
@@ -391,10 +395,10 @@
 
     .menu-names{
         position: absolute;
-        top: 80px;
-        right: 20px;
+        top: 100%;
+        right: 0;
         background-color: rgba(0,0,0,0.9);
-        width: 220px;
+        width: 100%;
         border-radius: 8px;
         overflow: hidden;
         transform: translateY(-20px);
@@ -442,8 +446,9 @@
 @media (max-width: 1024px) {
 
     .wrapper{
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+       justify-content: space-between;
+        align-items: center;       
     }
 
     .menu-names ul{
